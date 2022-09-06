@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}", "./views/home.ejs"],
+  content: ["./public/**/*.{html,js}"],
   mode: "jit",
   theme: {
     extend: {
@@ -11,6 +11,16 @@ module.exports = {
       fontFamily: {
         Ramaraja: ["Ramaraja", "serif"],
         Roboto: ["Roboto", "sans-serif"],
+      },
+      colors: {
+        theme: "#A7D2CB",
+        fontText: "#874C62",
+      },
+      width: {
+        "20px": "20px",
+      },
+      maxWidth: {
+        "2xl": "30px",
       },
     },
   },
